@@ -9,7 +9,7 @@ public class MidSemesterReport {
         return scanner.nextInt();
     }
 
-    
+
     protected char calculateMidtermReportGrade(){
         int midSemesterReport = checkMidSemesterReport();
         if(midSemesterReport == 1){

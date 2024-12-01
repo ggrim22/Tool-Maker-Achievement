@@ -13,14 +13,16 @@ public class CalculateGrade {
         char assignmentGrade = assignments.calculateAssignmentGrade();
         char achievementGrade = achievements.calculateAchievementGrade();
         char midSemesterReportGrade = midSemesterReport.calculateMidtermReportGrade();
-        char firstProjectGrade = projects.calculateProject1Grade();
+        char firstProjectGradeIteration1 = projects.calculateProject1GradeConsole();
+        char firstProjectGradeIteration2 = projects.calculateProject1GradeGUI();
         char finalProjectGrade = projects.calculateFinalProjectGrade();
 
         List<Character> categoryGrades = new ArrayList<>();
         categoryGrades.add(assignmentGrade);
         categoryGrades.add(achievementGrade);
         categoryGrades.add(midSemesterReportGrade);
-        categoryGrades.add(firstProjectGrade);
+        categoryGrades.add(firstProjectGradeIteration1);
+        categoryGrades.add(firstProjectGradeIteration2);
         categoryGrades.add(finalProjectGrade);
 
         return categoryGrades;

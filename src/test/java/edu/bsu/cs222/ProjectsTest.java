@@ -7,10 +7,18 @@ import java.io.ByteArrayInputStream;
 
 public class ProjectsTest {
     @Test
-    public void firstProjectTest(){
+    public void firstProjectTestIteration1(){
         simulateUserInput();
         Projects projects = new Projects();
-        char resultGrade = projects.calculateProject1Grade();
+        char resultGrade = projects.calculateProject1GradeConsole();
+        char testGrade = 'A';
+        Assertions.assertEquals(testGrade, resultGrade);
+    }
+    @Test
+    public void firstProjectTestIteration2(){
+        simulateUserInput();
+        Projects projects = new Projects();
+        char resultGrade = projects.calculateProject1GradeGUI();
         char testGrade = 'A';
         Assertions.assertEquals(testGrade, resultGrade);
     }
