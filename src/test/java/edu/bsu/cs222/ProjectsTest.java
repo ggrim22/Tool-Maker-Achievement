@@ -23,10 +23,28 @@ public class ProjectsTest {
         Assertions.assertEquals(testGrade, resultGrade);
     }
     @Test
-    public void finalProjectTest(){
+    public void finalProjectIteration1Test(){
         simulateUserInput();
         Projects projects = new Projects();
-        char resultGrade = projects.calculateFinalProjectGrade();
+        char resultGrade = projects.calculateFinalProjectIteration1();
+        char testGrade = 'A';
+        Assertions.assertEquals(testGrade, resultGrade);
+    }
+
+    @Test
+    public void finalProjectIteration2Test(){
+        simulateUserInput();
+        Projects projects = new Projects();
+        char resultGrade = projects.calculateFinalProjectIteration2();
+        char testGrade = 'A';
+        Assertions.assertEquals(testGrade, resultGrade);
+    }
+
+    @Test
+    public void finalProjectIteration3Test(){
+        simulateUserInput();
+        Projects projects = new Projects();
+        char resultGrade = projects.calculateFinalProjectIteration3();
         char testGrade = 'C';
         Assertions.assertEquals(testGrade, resultGrade);
     }

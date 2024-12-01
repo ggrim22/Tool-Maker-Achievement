@@ -15,7 +15,10 @@ public class CalculateGrade {
         char midSemesterReportGrade = midSemesterReport.calculateMidtermReportGrade();
         char firstProjectGradeIteration1 = projects.calculateProject1GradeConsole();
         char firstProjectGradeIteration2 = projects.calculateProject1GradeGUI();
-        char finalProjectGrade = projects.calculateFinalProjectGrade();
+        char finalProjectGradeIteration1 = projects.calculateFinalProjectIteration1();
+        char finalProjectGradeIteration2 = projects.calculateFinalProjectIteration2();
+        char finalProjectGradeIteration3 = projects.calculateFinalProjectIteration3();
+
 
         List<Character> categoryGrades = new ArrayList<>();
         categoryGrades.add(assignmentGrade);
@@ -23,7 +26,9 @@ public class CalculateGrade {
         categoryGrades.add(midSemesterReportGrade);
         categoryGrades.add(firstProjectGradeIteration1);
         categoryGrades.add(firstProjectGradeIteration2);
-        categoryGrades.add(finalProjectGrade);
+        categoryGrades.add(finalProjectGradeIteration1);
+        categoryGrades.add(finalProjectGradeIteration2);
+        categoryGrades.add(finalProjectGradeIteration3);
 
         return categoryGrades;
     }
